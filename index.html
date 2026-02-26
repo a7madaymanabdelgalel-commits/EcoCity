@@ -2,94 +2,42 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoCity | بوابة مصر للمستقبل الأخضر</title>
+    <title>EcoCity | الرئيسية</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
-
-    <nav class="glass-nav">
+    <nav class="navbar">
         <div class="logo">Eco<span>City</span></div>
         <ul class="nav-links">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#goals">الأهداف</a></li>
-            <li><a href="#vision">الرؤية</a></li>
-            <li><a href="#gallery">المعرض</a></li>
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="vision.html">رؤية 2030</a></li>
+            <li><a href="tech.html">التكنولوجيا</a></li>
         </ul>
-        <button class="btn-exit-top" onclick="exitApp()">خروج</button>
     </nav>
 
-    <header id="home" class="hero-advanced">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="glow-text">نعم نستطيع.. لمستقبل مستدام</h1>
-            <p class="hero-subtitle">دمج التكنولوجيا والبيئة لبناء مدن مصر الذكية</p>
-            <div class="scroll-indicator"><span></span></div>
-        </div>
+    <header class="hero-sub">
+        <h1>مرحباً بك في مدن المستقبل</h1>
+        <p>استكشف كيف تتحول مصر إلى الاقتصاد الأخضر والرقمي</p>
+        <a href="vision.html" class="btn-main">ابدأ الرحلة</a>
     </header>
 
-    <section id="goals" class="section">
-        <h2 class="main-title">أهداف برمجية EcoCity</h2>
+    <section class="section">
         <div class="grid-container">
-            <div class="glass-card blue-glow">
-                <div class="icon-circle">01</div>
-                <h3>الوعي الرقمي</h3>
-                <p>تثقيف الطلاب حول دور التكنولوجيا في رصد الانبعاثات الكربونية وحماية البيئة.</p>
+            <div class="card">
+                <h3>لماذا EcoCity؟</h3>
+                <p>مشروع تفاعلي يهدف لربط الطالب بإنجازات الدولة المصرية في مجال البيئة.</p>
             </div>
-            <div class="glass-card green-glow">
-                <div class="icon-circle">02</div>
-                <h3>الطاقة النظيفة</h3>
-                <p>استعراض مشاريع الدولة كحقل "ظهر" ومحطات الرياح في جبل الزيت.</p>
-            </div>
-            <div class="glass-card blue-glow">
-                <div class="icon-circle">03</div>
-                <h3>الاستدامة</h3>
-                <p>تطبيق معايير البناء الأخضر في العاصمة الإدارية لتقليل الهدر المائي والكهربائي.</p>
+            <div class="card">
+                <h3>محتويات البرمجية</h3>
+                <p>تتضمن 3 صفحات كاملة، معرض صور، وإحصائيات حية عن المشاريع القومية.</p>
             </div>
         </div>
     </section>
 
-    <section id="vision" class="vision-section">
-        <div class="vision-grid">
-            <div class="vision-image">
-                <img src="https://images.unsplash.com/photo-1466611653911-95281ecb396b?w=800" alt="طاقة الرياح">
-                <div class="image-overlay-card">رؤية مصر 2030</div>
-            </div>
-            <div class="vision-text">
-                <h2>إنجازات وطنية بأيادٍ تقنية</h2>
-                <p>المشروع يجسد التحول الذي تشهده مصر في قطاع الطرق والكباري والمدن الذكية التي تهدف لتقليل الازدحام المروري وبالتالي خفض الانبعاثات الضارة.</p>
-                <ul class="fancy-list">
-                    <li>توسيع الرقعة الخضراء (مبادرة 100 مليون شجرة).</li>
-                    <li>إنشاء شبكة طرق تقلل زمن الرحلات بنسبة 30%.</li>
-                    <li>إدارة القمامة والنفايات للأغراض الاقتصادية.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="section">
-        <h2 class="main-title">معرض الصور</h2>
-        <div class="image-gallery">
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400" alt="طاقة شمسية"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400" alt="تدوير"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400" alt="مكتب ذكي"></div>
-            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400" alt="طرق"></div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-grid">
-            <div class="footer-info">
-                <h3>EcoCity 2026</h3>
-                <p>مشروع مقدم لمسابقة "نعم نستطيع" الثانوية</p>
-            </div>
-            <button class="final-exit-btn" onclick="exitApp()">إنهاء الجولة التعليمية</button>
-        </div>
+    <footer class="footer">
+        <button onclick="exitApp()" class="btn-exit">خروج</button>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
