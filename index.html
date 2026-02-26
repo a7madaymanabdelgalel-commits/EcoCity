@@ -3,96 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EcoFuture | إعادة التدوير الذكي</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<title>EcoFuture Pro</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
 <body>
 
-<header>
-    <h1>🌍 EcoFuture</h1>
+<header id="navbar">
+    <h2>🌍 EcoFuture</h2>
     <nav>
-        <a href="#about">عن المشكلة</a>
-        <a href="#idea">الفكرة الجديدة</a>
-        <a href="#examples">أمثلة</a>
-        <a href="#goals">الأهداف</a>
-        <a href="#stats">إحصائيات</a>
+        <a href="#about">المشكلة</a>
+        <a href="#solution">الحل الذكي</a>
+        <a href="#dashboard">الإحصائيات</a>
         <a href="#contact">تواصل</a>
+        <button onclick="toggleMode()" class="mode-btn">🌙</button>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>إعادة تدوير النفايات من أجل مستقبل أخضر</h2>
-    <p>تحويل القمامة إلى قيمة اقتصادية وتقليل التلوث البيئي باستخدام التكنولوجيا الحديثة</p>
-    <button onclick="scrollToSection()">اكتشف المزيد</button>
+    <div class="glass">
+        <h1>إعادة التدوير الذكي</h1>
+        <p>نحو مدن نظيفة باستخدام التكنولوجيا وإنترنت الأشياء</p>
+        <button onclick="scrollDown()">اكتشف الآن</button>
+    </div>
 </section>
 
-<section id="about" class="section">
-    <h2>ما هي المشكلة؟</h2>
-    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="نفايات">
+<section id="about" class="section reveal">
+    <h2>المشكلة العالمية</h2>
     <p>
-        تتزايد النفايات في المدن بشكل خطير مما يؤدي إلى تلوث الهواء والمياه والتربة.
-        عدم إعادة التدوير يسبب خسائر اقتصادية ضخمة وفرص ضائعة.
+        ملايين الأطنان من النفايات تُهدر سنوياً دون إعادة تدوير،
+        مما يسبب خسائر اقتصادية وتلوث بيئي خطير.
     </p>
 </section>
 
-<section id="idea" class="section blue">
-    <h2>فكرة جديدة ومبتكرة</h2>
-    <p>
-        إنشاء نظام "حاويات ذكية" تعمل بإنترنت الأشياء (IoT)
-        تقوم بفرز النفايات تلقائياً باستخدام حساسات ذكية،
-        وترسل بيانات مباشرة إلى تطبيق لإعادة التدوير.
-    </p>
-    <img src="https://images.unsplash.com/photo-1604186838309-c6715f0d3e6c" alt="تكنولوجيا">
-</section>
-
-<section id="examples" class="section">
-    <h2>أمثلة عملية للتطبيق</h2>
+<section id="solution" class="section blue reveal">
+    <h2>الحل التكنولوجي</h2>
     <div class="cards">
         <div class="card">
-            <h3>إعادة تدوير البلاستيك</h3>
-            <p>تحويل البلاستيك إلى مواد بناء أو منتجات جديدة.</p>
+            <h3>حاويات ذكية</h3>
+            <p>فرز تلقائي باستخدام الذكاء الاصطناعي.</p>
         </div>
         <div class="card">
-            <h3>توليد الطاقة من النفايات</h3>
-            <p>استخدام المخلفات العضوية لإنتاج غاز حيوي.</p>
+            <h3>تطبيق نقاط</h3>
+            <p>مكافآت مقابل إعادة التدوير.</p>
         </div>
         <div class="card">
-            <h3>تطبيق نقاط المكافآت</h3>
-            <p>مكافأة المواطنين عند إعادة التدوير.</p>
+            <h3>تحويل لطاقة</h3>
+            <p>إنتاج غاز حيوي من المخلفات.</p>
         </div>
     </div>
 </section>
 
-<section id="goals" class="section blue">
-    <h2>أهداف المشروع</h2>
-    <ul>
-        <li>تقليل التلوث البيئي</li>
-        <li>زيادة الوعي المجتمعي</li>
-        <li>خلق فرص عمل جديدة</li>
-        <li>تحقيق عائد اقتصادي من النفايات</li>
-    </ul>
-</section>
-
-<section id="stats" class="section">
-    <h2>إحصائيات حية</h2>
-    <div class="counter">
-        <h3 id="count">0</h3>
-        <p>طن نفايات يمكن إعادة تدويرها سنوياً</p>
+<section id="dashboard" class="section reveal">
+    <h2>لوحة البيانات</h2>
+    <div class="stats">
+        <div class="stat">
+            <h3 id="counter1">0</h3>
+            <p>طن تم تدويرها</p>
+        </div>
+        <div class="stat">
+            <h3 id="counter2">0</h3>
+            <p>شجرة تم إنقاذها</p>
+        </div>
+        <div class="stat">
+            <h3 id="counter3">0</h3>
+            <p>مستخدم نشط</p>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="section blue">
+<section id="contact" class="section blue reveal">
     <h2>تواصل معنا</h2>
-    <input type="text" placeholder="اكتب اسمك">
-    <input type="email" placeholder="اكتب بريدك">
-    <textarea placeholder="اكتب رسالتك"></textarea>
+    <input type="text" placeholder="الاسم">
+    <input type="email" placeholder="البريد الإلكتروني">
+    <textarea placeholder="رسالتك"></textarea>
     <button onclick="sendMessage()">إرسال</button>
-    <button onclick="exitSite()" class="exit">خروج</button>
 </section>
+
+<button onclick="topFunction()" id="topBtn">↑</button>
 
 <footer>
-    <p>© 2026 EcoFuture - جميع الحقوق محفوظة</p>
+    <p>© 2026 EcoFuture Pro</p>
 </footer>
 
 <script src="script.js"></script>
