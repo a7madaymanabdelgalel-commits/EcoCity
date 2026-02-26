@@ -2,42 +2,114 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>EcoCity | الرئيسية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCity | موسوعة مصر المستدامة 2026</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="scroll-tracker" id="scrollTracker"></div>
+
     <nav class="navbar">
         <div class="logo">Eco<span>City</span></div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">الرئيسية</a></li>
-            <li><a href="vision.html">رؤية 2030</a></li>
-            <li><a href="tech.html">التكنولوجيا</a></li>
+            <li><a href="#intro">المقدمة</a></li>
+            <li><a href="#energy">الطاقة</a></li>
+            <li><a href="#cities">المدن</a></li>
+            <li><a href="#transport">النقل</a></li>
+            <li><a href="#water">المياه</a></li>
+            <li><a href="#digital">التحول الرقمي</a></li>
         </ul>
+        <button class="exit-btn" onclick="exitApp()">خروج</button>
     </nav>
 
-    <header class="hero-sub">
-        <h1>مرحباً بك في مدن المستقبل</h1>
-        <p>استكشف كيف تتحول مصر إلى الاقتصاد الأخضر والرقمي</p>
-        <a href="vision.html" class="btn-main">ابدأ الرحلة</a>
+    <header id="intro" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-up">نعم نستطيع.. لمستقبل أخضر</h1>
+            <p>مشروع تفاعلي يستعرض إنجازات الدولة المصرية في بناء المدن المستدامة باستخدام التكنولوجيا.</p>
+            <div class="hero-badges">
+                <span>رؤية 2030</span>
+                <span>تنمية مستدامة</span>
+                <span>ذكاء اصطناعي</span>
+            </div>
+        </div>
     </header>
 
-    <section class="section">
-        <div class="grid-container">
-            <div class="card">
-                <h3>لماذا EcoCity؟</h3>
-                <p>مشروع تفاعلي يهدف لربط الطالب بإنجازات الدولة المصرية في مجال البيئة.</p>
+    <section id="energy" class="section">
+        <h2 class="title">01. ثورة الطاقة المتجددة</h2>
+        <div class="flex-container">
+            <div class="text-block">
+                <h3>مجمع بنبان للطاقة الشمسية</h3>
+                <p>بني في أسوان ليكون أكبر تجمع لمحطات الطاقة الشمسية في العالم. يضم 32 محطة توليد ويهدف لتقليل 2 مليون طن من الانبعاثات الكربونية سنوياً، مما يجعله نموذجاً عالمياً للطاقة النظيفة.</p>
+                <h3>طاقة الرياح بجبل الزيت</h3>
+                <p>تعتبر من أكبر محطات الرياح في أفريقيا، وتستخدم تكنولوجيا حديثة لحماية الطيور المهاجرة مع توليد طاقة كافية لآلاف المنازل بفعالية عالية.</p>
             </div>
-            <div class="card">
-                <h3>محتويات البرمجية</h3>
-                <p>تتضمن 3 صفحات كاملة، معرض صور، وإحصائيات حية عن المشاريع القومية.</p>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1509391366360-fe5bb58583bb?w=600" alt="الطاقة الشمسية">
             </div>
         </div>
     </section>
 
+    <section id="cities" class="section gray-bg">
+        <h2 class="title">02. مدن ذكية ومستدامة</h2>
+        <div class="flex-container reverse">
+            <div class="text-block">
+                <h3>العاصمة الإدارية الجديدة</h3>
+                <p>مدينة تدار بالكامل عبر "مركز تحكم ذكي" يراقب استهلاك الطاقة والمرور والمخلفات. تتميز بـ "النهر الأخضر" الذي يعد أكبر حديقة مركزية في الشرق الأوسط، لضمان هواء نقي لجميع السكان.</p>
+                <h3>مدينة العلمين الجديدة</h3>
+                <p>تجمع بين السياحة والاستدامة، حيث تعتمد على محطات تحلية مياه البحر المتطورة لضمان الأمن المائي للسكان دون إجهاد الموارد الطبيعية.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1449156003053-c306a0483305?w=600" alt="المدن الذكية">
+            </div>
+        </div>
+    </section>
+
+    <section id="transport" class="section">
+        <h2 class="title">03. النقل الذكي وصفر انبعاثات</h2>
+        <div class="grid-layout">
+            <div class="info-card">
+                <h4>المونوريل</h4>
+                <p>أطول خط مونوريل في العالم يربط شرق وغرب القاهرة بالكهرباء تماماً، مما يقلل الزحام والانبعاثات الضارة.</p>
+            </div>
+            <div class="info-card">
+                <h4>القطار الكهربائي السريع</h4>
+                <p>يربط موانئ البحر الأحمر بالبحر المتوسط، مما يعزز حركة التجارة مع الحفاظ على البيئة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="water" class="section light-bg">
+        <h2 class="title">04. الأمن المائي والزراعي</h2>
+        <div class="flex-container">
+            <div class="text-block">
+                <h3>تبطين الترع</h3>
+                <p>مشروع قومي يهدف لمنع تسرب المياه في التربة، مما يوفر مليارات الأمتار المكعبة سنوياً ويضمن عدالة وصول المياه لجميع المزارعين.</p>
+                <h3>محطة بحر البقر</h3>
+                <p>أكبر محطة لمعالجة مياه الصرف في العالم لاستصلاح أراضي سيناء، مما يساهم في تحقيق الأمن الغذائي المستدام.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600" alt="تكنولوجيا المياه">
+            </div>
+        </div>
+    </section>
+
+    <section id="digital" class="section">
+        <h2 class="title">05. التكنولوجيا في خدمة الكوكب</h2>
+        <div class="centered-box">
+            <p>نستخدم في مصر أنظمة الاستشعار عن بعد والذكاء الاصطناعي لرصد جودة الهواء والتنبؤ بالتغيرات المناخية، بالإضافة إلى "مبادرة 100 مليون شجرة" التي يتم رصدها رقمياً لضمان نموها المستدام.</p>
+        </div>
+    </section>
+
     <footer class="footer">
-        <button onclick="exitApp()" class="btn-exit">خروج</button>
+        <h2 class="title white-text">06. كيف تساهم أنت؟</h2>
+        <p>بصفتنا جيل "نعم نستطيع"، دورنا هو نشر الوعي البيئي واستخدام التكنولوجيا لابتكار حلول تحمي مدننا.</p>
+        <button class="final-btn" onclick="exitApp()">إنهاء الجولة التعليمية</button>
+        <p class="copyright">جميع الحقوق محفوظة © مسابقة نعم نستطيع 2026</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
