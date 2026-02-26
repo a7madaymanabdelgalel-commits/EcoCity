@@ -1,23 +1,41 @@
-function scrollToSection() {
-    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+function scrollDown(){
+document.getElementById("about").scrollIntoView({behavior:"smooth"});
 }
 
-function sendMessage() {
-    alert("تم إرسال رسالتك بنجاح ✅");
+function sendMessage(){
+alert("تم إرسال رسالتك بنجاح");
 }
 
-function exitSite() {
-    window.close();
+function toggleMode(){
+document.body.classList.toggle("dark");
 }
 
-let count = 0;
-let counter = document.getElementById("count");
+window.onscroll=function(){
+let btn=document.getElementById("topBtn");
+if(document.documentElement.scrollTop>300){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+}
 
-let interval = setInterval(() => {
-    if (count < 500) {
-        count += 5;
-        counter.textContent = count;
-    } else {
-        clearInterval(interval);
-    }
-}, 50);
+function topFunction(){
+document.documentElement.scrollTop=0;
+}
+
+function animateCounter(id,max){
+let count=0;
+let element=document.getElementById(id);
+let interval=setInterval(()=>{
+if(count<max){
+count+=Math.ceil(max/100);
+element.textContent=count;
+}else{
+clearInterval(interval);
+}
+},30);
+}
+
+animateCounter("counter1",1200);
+animateCounter("counter2",5400);
+animateCounter("counter3",890);
