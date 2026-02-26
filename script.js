@@ -1,30 +1,15 @@
 // تحديث شريط التقدم عند التمرير
-window.onscroll = function() { updateProgress() };
+window.onscroll = function() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("scrollTracker").style.width = scrolled + "%";
+};
 
-function updateProgress() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-}
-
-// وظيفة الخروج الاحترافية (شرط المسابقة رقم 15)
+// وظيفة الخروج الآمن
 function exitApp() {
-    if (confirm("هل انتهيت من استكشاف EcoCity؟ سيتم إغلاق النافذة الآن.")) {
+    if(confirm("هل انتهيت من جولتك في EcoCity؟")) {
         window.close();
-        alert("شكراً لمشاركتك في رؤية مصر 2030!");
+        alert("شكراً لك! تذكر أن مستقبلك يبدأ بخطوة خضراء.");
     }
 }
-
-// إضافة تأثير الظهور التدريجي للعناصر
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-visible');
-        }
-    });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.glass-card').forEach(card => {
-    observer.observe(card);
-});
