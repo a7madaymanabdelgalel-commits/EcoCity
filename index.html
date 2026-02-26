@@ -1,123 +1,90 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>إعادة تدوير النفايات</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيئتنا المستدامة | مستقبل إعادة التدوير</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-  <h1>إعادة تدوير النفايات</h1>
-
-  <nav id="nav">
-    <ul>
-      <li><a href="#about">عن التدوير</a></li>
-      <li><a href="#types">الأنواع</a></li>
-      <li><a href="#benefits">الفوائد</a></li>
-      <li><a href="#stats">إحصائيات</a></li>
-      <li><a href="#faq">الأسئلة</a></li>
-      <li><a href="#contact">تواصل</a></li>
-    </ul>
-  </nav>
-
-  <div class="header-buttons">
-    <button onclick="toggleDarkMode()">وضع داكن</button>
-    <button onclick="toggleMenu()" class="menu-btn">☰</button>
-  </div>
-</header>
-
-<section class="hero">
-  <h2>معًا لحماية البيئة وتحقيق الاستدامة</h2>
-  <p>التدوير يقلل التلوث ويوفر الطاقة ويدعم الاقتصاد.</p>
-  <button onclick="scrollToSection('about')">ابدأ القراءة</button>
-</section>
-
-<section id="about" class="section">
-  <h2>ما هي إعادة التدوير؟</h2>
-  <p>
-  هي عملية تحويل النفايات إلى مواد جديدة قابلة للاستخدام مرة أخرى،
-  مما يقلل استهلاك الموارد الطبيعية ويحمي البيئة من التلوث.
-  </p>
-  <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807" alt="إعادة التدوير">
-</section>
-
-<section id="types" class="section gray">
-  <h2>أنواع النفايات</h2>
-
-  <div class="filter-buttons">
-    <button onclick="filterType('all')">الكل</button>
-    <button onclick="filterType('plastic')">بلاستيك</button>
-    <button onclick="filterType('paper')">ورق</button>
-    <button onclick="filterType('metal')">معادن</button>
-  </div>
-
-  <div class="cards">
-    <div class="card plastic">
-      <h3>البلاستيك</h3>
-      <p>يعاد تصنيعه لعبوات وأدوات جديدة.</p>
+    <div id="splash">
+        <h1>مرحباً بك في مستقبل البيئة</h1>
+        <p>جاري تحميل المحتوى...</p>
     </div>
-    <div class="card paper">
-      <h3>الورق</h3>
-      <p>يوفر الأشجار ويقلل التلوث.</p>
-    </div>
-    <div class="card metal">
-      <h3>المعادن</h3>
-      <p>مثل الألومنيوم والحديد لإعادة الاستخدام الصناعي.</p>
-    </div>
-  </div>
-</section>
 
-<section id="benefits" class="section">
-  <h2>الفوائد الاقتصادية والبيئية</h2>
-  <ul>
-    <li>تقليل التلوث البيئي</li>
-    <li>توفير الطاقة بنسبة كبيرة</li>
-    <li>خلق فرص عمل جديدة</li>
-    <li>تقليل استهلاك الموارد الطبيعية</li>
-  </ul>
-</section>
+    <header>
+        <nav>
+            <div class="logo">إعادة التدوير الذكي</div>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#goals">أهدافنا</a></li>
+                <li><a href="#benefits">الفوائد</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+                <li id="exit-btn">خروج</li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="stats" class="section gray">
-  <h2>إحصائيات</h2>
-  <div class="stats">
-    <div><span id="counter1">0</span><p>٪ توفير طاقة</p></div>
-    <div><span id="counter2">0</span><p>شجرة يتم إنقاذها</p></div>
-    <div><span id="counter3">0</span><p>٪ تقليل تلوث</p></div>
-  </div>
-</section>
+    <section id="home" class="hero">
+        <div class="content">
+            <h2>تحويل النفايات إلى ثروة</h2>
+            <p>نعمل على بناء عالم أنظف من خلال تقنيات إعادة التدوير المبتكرة لتعزيز الاقتصاد الأخضر.</p>
+            <button onclick="showAlert()">ابدأ الرحلة</button>
+        </div>
+    </section>
 
-<section id="faq" class="section">
-  <h2>أسئلة شائعة</h2>
+    <section id="goals" class="section">
+        <h3>أهداف البرنامج</h3>
+        <div class="grid">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3211/3211514.png" alt="بيئة">
+                <h4>حماية البيئة</h4>
+                <p>تقليل الانبعاثات الكربونية وحماية الحياة الفطرية.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2845/2845892.png" alt="اقتصاد">
+                <h4>دعم الاقتصاد</h4>
+                <p>خلق فرص عمل جديدة من خلال صناعات التحويل.</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="faq-item">
-    <h4 onclick="toggleFAQ(this)">هل التدوير يقلل التلوث؟</h4>
-    <p>نعم، لأنه يقلل النفايات في المدافن ويخفض الانبعاثات.</p>
-  </div>
+    <section id="benefits" class="section bg-light">
+        <h3>تأثير إعادة التدوير</h3>
+        <table class="info-table">
+            <thead>
+                <tr>
+                    <th>المادة</th>
+                    <th>فائدة إعادة التدوير</th>
+                    <th>التوفير في الطاقة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>البلاستيك</td>
+                    <td>تقليل تلوث المحيطات</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>الألمنيوم</td>
+                    <td>منع استنزاف المناجم</td>
+                    <td>95%</td>
+                </tr>
+                <tr>
+                    <td>الورق</td>
+                    <td>حماية الغابات</td>
+                    <td>60%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-  <div class="faq-item">
-    <h4 onclick="toggleFAQ(this)">هل إعادة التدوير مربحة اقتصاديًا؟</h4>
-    <p>نعم، تساهم في خلق صناعات جديدة وفرص عمل.</p>
-  </div>
-</section>
+    <footer>
+        <p>حقوق النشر © 2024 - مشروع البيئة المستدامة</p>
+    </footer>
 
-<section id="contact" class="section gray">
-  <h2>تواصل معنا</h2>
-  <form onsubmit="return validateForm()">
-    <input type="text" id="name" placeholder="الاسم">
-    <input type="email" id="email" placeholder="البريد الإلكتروني">
-    <textarea id="message" placeholder="اكتب رسالتك"></textarea>
-    <button type="submit">إرسال</button>
-  </form>
-</section>
-
-<footer>
-  <button onclick="scrollToTop()">العودة للأعلى</button>
-  <button onclick="exitSite()">خروج</button>
-  <p>© 2026 جميع الحقوق محفوظة</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
